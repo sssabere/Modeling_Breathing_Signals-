@@ -388,7 +388,7 @@ def train_model_with_loaders(model, train_loader, val_loader,
                              use_pos_weight=True):
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model = model.to(device)
-
+    # THIS PART IS VERY IMPORTANT
     pos_weight = None
     if use_pos_weight:
         y_train_all = []
