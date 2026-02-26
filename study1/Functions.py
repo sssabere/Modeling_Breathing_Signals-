@@ -285,7 +285,8 @@ class CNN1D(nn.Module):
 from sklearn.model_selection import train_test_split
 from torch.utils.data import DataLoader
 import numpy as np
-
+# TODO : UPDATE THIS FUNCTION FOR REGRESSION AND CLASSIFICATION 
+# FIND THE NEW UPDATED FUNCTION IN AGE_PREDICATION.IPYNB
 def prepare_split_data_loaders(
     X_mouth, y_mouth,
     test_size=0.2,
